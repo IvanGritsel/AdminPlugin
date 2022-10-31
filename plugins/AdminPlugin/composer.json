@@ -1,0 +1,33 @@
+{
+  "name": "swag/admin-plugin",
+  "description": "Kinda plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Me"
+    },
+    {
+      "name": "Just me"
+    }
+  ],
+  "require": {
+    "shopware/core": "6.4.*"
+  },
+  "extra": {
+    "shopware-plugin-class": "AdminPlugin\\AdminPlugin",
+    "label": {
+      "de-DE": "Admin plugin but in german",
+      "en-GB": "Admin plugin"
+    },
+    "description": {
+      "de-DE": "Description in german",
+      "en-GB": "Description"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "AdminPlugin\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{% block admin_plugin_block %}
+    <sw-page>
+        {% block admin_plugin_header %}
+            <template #smart-bar-header>
+                <h2>
+                    {{ $tc('admin-module.header') }}
+                </h2>
+            </template>
+        {% endblock %}
+        {% block admin_plugin_contents %}
+            <template #content>
+                <h3>Hello World!</h3>
+                <sw-card-view>
+                    <h4>Number of products: {{ numberOfProducts }}</h4>
+                    <sw-button-process @click="deleteLast">Delete last</sw-button-process>
+                    <sw-button-process @click="newWithDefault">Create new</sw-button-process>
+                    <sw-button-process @click="updateLastWithDefault">Update last</sw-button-process>
+                </sw-card-view>
+            </template>
+        {% endblock %}
+    </sw-page>
+{% endblock %}

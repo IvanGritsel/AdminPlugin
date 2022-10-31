@@ -1,0 +1,9 @@
+{
+  "admin-module": {
+    "general": {
+      "mainMenuItemGeneral": "Product handling",
+      "descriptionTextModule": "Do stuff with products"
+    },
+    "header": "Create/Update/Delete"
+  }
+}
